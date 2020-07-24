@@ -19,20 +19,20 @@ const questions = [
     },{
         type: "input", 
         message: "How are you installing your project?",
-        name: "Install",
+        name: "Installation",
     },{
         type: "list", 
         message: "What is your license?",
         name: "License",
-        choices: ["MIT", "Zlib", "Apache", "None"]
+        choices: ["MIT", "Zlib", "Apache-2.0", "None"]
     },{
         type: "input", 
         message: "What is the usage?",
         name: "Usage",
     },{
         type: "input", 
-        message: "Who are the contributers?",
-        name: "Contributers",
+        message: "Who are the contributors?",
+        name: "Contributors",
     },{
         type: "input", 
         message: "What tests did you initialize?",
