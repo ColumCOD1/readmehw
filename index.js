@@ -1,5 +1,5 @@
 //dependencies
-const generateMarkdown = require("generateMarkdown")
+const generateMarkdown = require("./utils/generateMarkdown")
 const fs = require("fs")
 const inquirer = require("inquirer")
 
@@ -21,9 +21,10 @@ const questions = [
         message: "How are you installing your project?",
         name: "Install",
     },{
-        type: "input", 
+        type: "list", 
         message: "What is your license?",
         name: "License",
+        choices: ["MIT", "Zlib", "Apache", "None"]
     },{
         type: "input", 
         message: "What is the usage?",
@@ -47,7 +48,7 @@ const questions = [
     },{
         type: "input", 
         message: "What is your Email address?",
-        name: "Email address",
+        name: "Email",
     },
 
 ];
